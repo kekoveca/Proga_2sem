@@ -61,28 +61,6 @@ int main(){
     }
     cout << "Size : " << v.size() << endl;
     cout << endl;
-
-    // for(int i = 0; i < v.size() - timeThreshold; i++){
-    //     cout << "Step " << i << "; ";
-    //     set<int> ports;
-    //     cout << "set " << i << " created: {";
-
-    //     for(int j = i; j < i + timeThreshold; j++){
-    //         ports.insert(v.at(j).port);
-    //     }
-
-    //     for(const auto& el: ports){
-    //         cout << el << " ";
-    //     }
-
-    //     cout << "} ";
-
-    //     if(ports.size() >= portLimit)
-    //         bad = true;
-    //     cout << boolalpha << bad << endl;
-    //     bad = false;
-    //     }   
-
     auto t = is_bad(5, 3, v);
     cout << boolalpha << t;
 
